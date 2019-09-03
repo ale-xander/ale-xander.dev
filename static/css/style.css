@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+  font: inherit;
+    vertical-align: baseline;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    /* colors  */
+    --red: #E63946;
+    --dark-red: #8B0000;
+    --white: #F1FAEE;
+    --light-blue: #A8DADC;
+    --dark-blue: #457B9D;
+    --darker-blue: #1D3557;
+    --yankees-blue: #143642;
+    --orange: #EC9A29;
+    --cyan: #0F8B8D;
+    --dark-cyan: #0B6667;
+    --blackish: #353535;
+}
+.hero{
+    position: relative;
+    top: 4em;
+    height: 40em;
+    background: var(--white)
+}
+.hero-img{
+    max-height: 37em !important;
+    display: block;
+    padding-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-image {
+    background-image: url("static/images/hero.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/icon-button/mdc-icon-button";
+.mdc-top-app-bar {
+    background: var(--blackish)
+}
+.nav-button h6 {
+    margin: .25em;
+    font-size: .8em;
+    background: var(--dark-blue);
+    color: var(--white);
+    padding: 0.5em !important;
+    border: 1px solid black !important;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.nav-button h6:hover {
+    color: var(--white);
+    background: var(--light-blue);
+}
+
+#about-me{
+    display: flex;
+    margin: auto;
+    padding-top: 5em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* height: 25em; */
+    background: var(--cyan);
+    color: var(--white);
+}
+.background, .currently, .education {
+    padding: 1em .2em 1em .2em;
+    width: 30%;
+}
+h4{
+    text-align: center;
+    font-weight: bolder;
+    padding: .3em;
+}
+
+h5{
+    padding-bottom: .1em;
+}
+p{
+    font-size: .9em;
+    padding: .1em;
+    line-height: 1.4rem;;   
+}
+
+#project-one{
+    height: 28em;
+    background: var(--orange);
+    display: grid;
+    grid-template-columns: 1.3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+}
+
+#project-two{
+    height: 28em;
+    background: var(--dark-red);
+    display: grid;
+    grid-template-columns: 0.7fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+}
+#project-three{
+    height: 28em;
+    background: var(--darker-blue);
+    display: grid;
+    grid-template-columns: 1.3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+}
+
+.proj-desc{
+    color: var(--white);
+    padding: .5em;
+}
+.proj-img img{
+    max-height: 28em;
+    padding: 1em;
+}
+.description {
+    font-size: 2em;
+    font-weight: bolder;
+    padding-bottom: 2em;
+}
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    padding-top: 2em;
+}
+
+
+#technologies{
+    background: var(--white);
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.deployment {
+    justify-content: flex-start;
+}
+li{
+    padding: 0.5em;
+}
+li img{
+   max-width: 10em;
+}
+h3{
+    text-align: center;
+}
+
+
+#contact-me{
+    background: var(--darker-blue);
+    color: var(--white);
+}
+
+
+.contact-wrapper{
+    padding: 2em;
+}
+.contact-header {
+    text-align: center;
+    padding-top: 1em;
+}
+h2{
+    font-weight: bolder;
+    font-size: 2em;
+}
+.fields {
+    display: flex;
+    flex-direction: column;
+    max-width: 25em;
+    border: 3px solid var(--white);
+    padding: 2em;
+    margin: auto;
+    text-align: center;
+}
+@import "@material/textfield/mdc-text-field";
+.message{
+    background: white;
+}
+@import "@material/button/mdc-button";
+.submit-button{
+    max-width: 10em;
+    margin: 0 auto;
+}
+#name, #email, #message{
+    margin-bottom: 1em;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 5em;
+    background: var(--blackish);
+}
+i.fab, i.fas {
+    padding-top: .3em;
+}
+#devto{
+    margin-top: 1em;
+}
+a {
+    color: var(--white)
+} 
+
